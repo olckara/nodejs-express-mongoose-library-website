@@ -1,0 +1,10 @@
+<div class="jumbotron">
+    <h1>{{book.title}}</h1>
+    <p>by {{join book.authors}}</p>
+    <p>Price: <b>{{book.price}}$</b></p>
+    <p>{{book.pages_i}}</p>
+    <div class="row">
+        <p class="pull-left"><a id="update-button" class="btn btn-primary btn-md" role="button" data-isbn="{{book._id}}">Update</a></p>
+        <p class="pull-right"><a id="delete-button" class="btn btn-danger btn-md" role="button" data-isbn="{{book._id}}">Delete</a></p>
+    </div>
+</div>

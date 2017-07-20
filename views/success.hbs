@@ -1,0 +1,11 @@
+<div class="jumbotron">
+    <h1>{{book.title}}</h1>
+    <p>by {{join book.authors}}</p>
+    <p>Price: <b>{{book.price}}$</b></p>
+    <p>{{book.pages_i}}</p>
+    <div class="row">
+        <p class="pull-left"><a class="btn btn-primary btn-md" href="#" role="button">Update</a></p>
+        <p class="pull-right"><a class="btn btn-danger btn-md" href="#" role="button">Delete</a></p>
+    </div>
+    <div class="alert alert-success" role="alert">Book with ISBN {{book._id}} is added.</div>
+</div>

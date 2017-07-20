@@ -1,5 +1,5 @@
 {
-  "name": "untitled",
+  "name": "sony-library",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -13,6 +13,8 @@
     "hbs": "~4.0.1",
     "morgan": "~1.8.1",
     "serve-favicon": "~2.4.2",
-    "mongoose": "^4.11.3"
+    "mongoose": "^4.11.3",
+    "is-isbn": "^1.0.1",
+    "mongo-sanitize": "^1.0.0"
   }
 }

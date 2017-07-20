@@ -1,0 +1,28 @@
+<div class="panel panel-info">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Search Results for {{q}}</div>
+
+    <!-- Table -->
+    <table id="results-table" class="table table-hover">
+        <thead>
+        <tr>
+            <th><a id="title">Title</a></th>
+            <th><a id="authors">Author(s)</a></th>
+            <th><a id="publisher">Publisher</a></th>
+            <th><a id="cat">Category</a></th>
+            <th><a id="pages_i">Pages</a></th>
+            <th><a id="price">Price</a></th>
+        </tr>
+        </thead>
+        {{#each results}}
+            <tr style="cursor:pointer" class="clickable-row" id={{this._id}}>
+                <td>{{this.title}}</td>
+                <td>{{join this.authors}}</td>
+                <td>{{this.publisher}}</td>
+                <td>{{this.cat}}</td>
+                <td>{{this.pages_i}}</td>
+                <td>{{this.price}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</div>
